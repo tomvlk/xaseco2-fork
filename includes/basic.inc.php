@@ -698,7 +698,7 @@ function http_get_file($url, $openonly = false) {
             'timeout'           => 2,
             'user_agent'        => 'XASECO2-' . XASECO2_VERSION . ' HTTPSFIX (' . PHP_OS . '; ' . $aseco->server->game . ')',
             'follow_location'   => true,
-            'header'            => 'X-ManiaPlanet-ServerLogin: ' . $aseco->server->serverlogin . '\r\n'
+            'header'            => 'X-ManiaPlanet-ServerLogin: ' . $aseco->server->serverlogin
 		)
 	);
 
