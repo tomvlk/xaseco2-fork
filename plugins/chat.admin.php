@@ -830,8 +830,8 @@ function chat_admin($aseco, $command) {
 					$message = '{#server}> {#error}Error downloading, or MX is down!';
 					$aseco->client->query('ChatSendServerMessageToLogin', $aseco->formatColors($message), $login);
 				} else {
-					// check for maximum online map size (1024 KB)
-					if (strlen($file) >= 1024 * 1024) {
+					// check for maximum online map size (2048 KB)
+					if (strlen($file) >= 2 * 1024 * 1024) {
 						$message = formatText($rasp->messages['MAP_TOO_LARGE'][0],
 						                      round(strlen($file) / 1024));
 						$aseco->client->query('ChatSendServerMessageToLogin', $aseco->formatColors($message), $login);
