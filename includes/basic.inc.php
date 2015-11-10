@@ -710,7 +710,7 @@ function http_get_file($url, $openonly = false) {
 
 
     if ($openonly) {
-        return !$data;
+        return !empty($data);
     }
 
     return $data;

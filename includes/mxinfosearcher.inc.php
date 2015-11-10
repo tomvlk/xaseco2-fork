@@ -218,7 +218,7 @@ class MXInfoSearcher implements Iterator,Countable {
 		}
 
 		// Check for http status code
-		if (!isset($http_response_header[0]) || !stristr($http_response_header[0], '200 OK')) {
+		if (!in_array('HTTP/1.1 200 OK', $http_response_header) && !in_array('HTTP/1.0 200 OK', $http_response_header)) {
 			return false;
 		}
 
