@@ -812,7 +812,7 @@ function chat_admin($aseco, $command) {
 		global $rasp, $mxdir, $jukebox_adminadd;  // from plugin.rasp.php, rasp.settings.php
 
 		$source = 'MX';
-		$remotelink = 'http://tm.mania-exchange.com/tracks/download/';
+		$remotelink = 'https://tm.mania-exchange.com/tracks/download/';
 
 		if (count($command['params']) == 1) {
 			$message = '{#server}> {#error}You must include a MX map ID!';
