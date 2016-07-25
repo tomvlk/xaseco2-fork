@@ -31,6 +31,7 @@
 /**
  * Include required classes
  */
+require_once('includes/modernizer.inc.php'); // contains a fix for php 5.6 and php 7
 require_once('includes/types.inc.php');  // contains classes to store information
 require_once('includes/basic.inc.php');  // contains standard functions
 require_once('includes/GbxRemote.inc.php');  // needed for dedicated server connections
